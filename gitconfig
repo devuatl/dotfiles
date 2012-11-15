@@ -1,0 +1,15 @@
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	# git lg current branch
+	lgc = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg = !"git lgc --all"
+	stagedeleted = ls-files --deleted | xargs git rm
+[user]
+	name = Devuatl
+	email = kieda.lukasz@gmail.com
+[color]
+	ui = true
+[core]
+	editor = emacs
